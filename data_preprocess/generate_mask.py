@@ -33,7 +33,7 @@ if __name__ == "__main__":
             filename = filename[:-4]
 
             # Parse xml file
-            tree = ET.parse('./dataset/Marmot/' + filename + '.xml')
+            tree = ET.parse(directory + filename + '.xml')
             root = tree.getroot()
             size = root.find('size')
 
